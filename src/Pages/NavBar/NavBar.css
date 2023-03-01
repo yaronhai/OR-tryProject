@@ -1,0 +1,14 @@
+a {
+    color:black;
+}
+
+.links-containter {
+    background-color:lightblue;
+    padding: 10px;
+}
+
+.navlink {
+    font-size: 2em;
+    padding: 10px;
+    
+}
