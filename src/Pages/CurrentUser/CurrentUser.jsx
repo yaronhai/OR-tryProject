@@ -1,6 +1,11 @@
+import './CurrentUser.css'
+
 const CurrentUser = () => {
     return(
-        <h1>User page</h1>
+        <div className="user-container">
+            <h1>User page</h1>    
+        </div>
+        
     )
 }
 export default CurrentUser;

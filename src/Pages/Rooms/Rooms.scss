@@ -1,0 +1,18 @@
+.comp-container {
+    
+    background-color: white;
+    border-style: solid;
+    border-width: 0.5em;
+    border-color: black;
+    border-radius: 1em;
+}
+
+.rooms-container {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: yellow;
+    margin: 1em;
+    padding: 1em;
+}
+

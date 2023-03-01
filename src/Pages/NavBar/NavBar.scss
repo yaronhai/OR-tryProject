@@ -1,0 +1,19 @@
+
+.links-containter {
+    display:flex;
+    direction:ltr;
+    justify-content:flex-end;
+    padding: 10px;
+}
+
+.navlink {
+    font-size: 2em;
+    padding: 10px;   
+}
+
+.nav-container {
+    display:flex;
+    justify-content:space-between;
+    margin-bottom: 1em;
+    
+}

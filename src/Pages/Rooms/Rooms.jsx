@@ -1,11 +1,13 @@
 
 import Room from '../../components/Room/Room.jsx';
+import './Rooms.scss';
 
 const Rooms = () => {
     return(
-        <div>
-            <h1>This is a room page</h1>
-            <div className="rooms-container">
+        <div className='comp-container'>
+            <h1>Rooms page</h1>
+            <div className='rooms-container'>
+                <Room />
                 <Room />
             </div>
         </div>

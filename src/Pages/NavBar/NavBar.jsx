@@ -1,21 +1,21 @@
 
-import { Fragment } from "react";
 import { Link, Outlet } from "react-router-dom";
-import './NavBar.css';
+import './NavBar.scss';
 
 
 const NavBar = () => {
     return(
-        <Fragment>
-            
-            <div className="links-containter">
+        <fragment>
+            <div className="nav-container">
                 <h1>This is NavBar</h1>
-                <Link className="navlink" to = '/'> Home </Link>
-                <Link className="navlink" to = 'user'>User</Link>
-                <Link className="navlink" to = 'rooms'>Rooms</Link>
+                <div className="links-containter">
+                    <Link className="navlink" to = '/'> Home </Link>
+                    <Link className="navlink" to = 'user'>User</Link>
+                    <Link className="navlink" to = 'rooms'>Rooms</Link>
+                </div>
             </div>
             <Outlet />
-        </Fragment>
+        </fragment>
        
     )
 }
