@@ -1,0 +1,31 @@
+$room-color: darkblue;
+$room-bg-color: grayscale($color: #aaaaaa);
+$room-border-color: darkred;
+$room-border-size: 0.5em;
+
+.room-container {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+       
+    :hover {
+        transition-duration:300ms;
+        transform: scale(1.05)
+    } 
+    
+    .room {
+        border: solid $room-border-size $room-border-color;
+        border-radius: 8px;
+        color: $room-color;
+        background-color: $room-bg-color ;
+        padding: 20px;
+        margin: 10px;
+        font-size: 12px;
+        
+        :hover{
+            transform: none;
+        }
+    }
+
+
+}

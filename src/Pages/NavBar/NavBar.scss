@@ -4,6 +4,11 @@
     direction:ltr;
     justify-content:flex-end;
     padding: 10px;
+
+    :hover {
+        color: darkred;
+        transform: scale(1.03)
+    }
 }
 
 .navlink {
