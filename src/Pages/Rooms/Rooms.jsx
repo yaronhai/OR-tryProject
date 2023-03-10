@@ -1,6 +1,6 @@
 
-import Room from '../../components/room/room.jsx';
-import './rooms.scss';
+import Room from '../../components/Room/Room.jsx';
+import './Rooms.scss';
 
 const Rooms = () => {
     return(
