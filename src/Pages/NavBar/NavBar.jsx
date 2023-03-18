@@ -1,20 +1,21 @@
 import { Fragment } from 'react';
-import { Link, Outlet } from "react-router-dom";
-import './NavBar.scss';
+import { Outlet } from "react-router-dom";
+//import  './NavBar.styles';
+import { LinksContainer, NavContainer, NavLink } from './NavBar.styles';
 
 
 const NavBar = () => {
     return(
         <Fragment>
-            <div className="nav-container">
+            <NavContainer>
+                <NavLink green to = '/'  > Home </NavLink>
                 <h1>This is NavBar</h1>
-                <div className="links-containter">
-                    <Link className="navlink" to = '/'> Home </Link>
-                    <Link className="navlink" to = '/user'>User</Link>
-                    <Link className="navlink" to = '/rooms'>Rooms</Link>
-                    <Link className="navlink" to = '/sign-in'>Sign In</Link>
-                </div>
-            </div>
+                <LinksContainer>
+                    <NavLink to = '/user'>User</NavLink>
+                    <NavLink to = '/rooms'>Rooms</NavLink>
+                    <NavLink to = '/sign-in'>Sign In</NavLink>
+                </LinksContainer>
+            </NavContainer>
             <Outlet />
         </Fragment>
        
