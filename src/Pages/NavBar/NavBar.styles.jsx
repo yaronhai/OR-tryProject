@@ -7,7 +7,7 @@ export const NavContainer = styled.div`
     margin-bottom: 1em;
     background-color: navy;
     color: white;   
-
+    text-shadow: 2px 1px pink;
 `;
 
 export const LinksContainer = styled.div`
@@ -15,13 +15,22 @@ export const LinksContainer = styled.div`
     direction:ltr;
     justify-content:flex-end;
     padding: 10px; 
+    a {color:${props => props.txtColor};}
+    a:hover { color:red; }
 `;
 
 export const NavLink = styled(Link)`
     font-size: 2em;
     padding: 10px;   
-    color: ${props => props.green ? "green" : "red"} ;      
-`
+    color: ${props => props.txtColor ?  props.txtColor : 'white'};      
+    background-color: ${props => props.bgColor && props.bgColor };
+    text-shadow: 2px 2px yellow;
+    :hover {
+        transition-duration:300ms;
+        transform: scale(1.05);
+    }
+`;
+
 
 /*
 .nav-container {
