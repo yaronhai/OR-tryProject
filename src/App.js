@@ -11,7 +11,7 @@ import NavBar from './Pages/NavBar/NavBar.jsx';
 import CurrentUser from './Pages/CurrentUser/CurrentUser';
 import Rooms from './Pages/Rooms/Rooms.jsx'
 import './App.css';
-import SignIn from './Pages/sign-in/sign-in';
+import Authentication from './Pages/authentication/authentication';
 import { setCurrentUser } from './redux/user/user.actions';
 
 
@@ -35,7 +35,7 @@ function App() {
         <Route index element = { <Home />} />
         <Route path='user' element = {<CurrentUser /> } /> 
         <Route path='rooms' element = { <Rooms /> } /> 
-        <Route path='sign-in' element = { <SignIn /> } />
+        <Route path='auth' element = { <Authentication /> } />
       </Route>
     </Routes>
  
